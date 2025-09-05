@@ -13,40 +13,40 @@ import {
 const Services = () => {
   const services = [
     {
-      icon: <Gavel className="w-8 h-8" />,
-      title: "Direito Civil",
-      description: "Contratos, responsabilidade civil, direitos reais e obrigações.",
-      features: ["Contratos em geral", "Indenizações", "Direito imobiliário", "Sucessões"]
-    },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: "Direito Criminal",
-      description: "Defesa criminal, recursos e acompanhamento processual completo.",
-      features: ["Defesa criminal", "Recursos", "Habeas Corpus", "Júri popular"]
-    },
-    {
-      icon: <Users className="w-8 h-8" />,
-      title: "Direito Trabalhista",
-      description: "Direitos do trabalhador, rescisões e questões previdenciárias.",
-      features: ["Ações trabalhistas", "FGTS e PIS", "Rescisões", "Assédio moral"]
-    },
-    {
       icon: <Building className="w-8 h-8" />,
+      title: "Direito Tributário",
+      description: "Consultoria e defesa em questões tributárias complexas.",
+      features: ["Planejamento tributário", "Elisão fiscal", "Defesas em autuações", "Parcelamentos fiscais"]
+    },
+    {
+      icon: <Briefcase className="w-8 h-8" />,
       title: "Direito Empresarial",
       description: "Consultoria jurídica para empresas, contratos e sociedades.",
       features: ["Abertura de empresas", "Contratos comerciais", "Recuperação judicial", "Compliance"]
     },
     {
       icon: <FileText className="w-8 h-8" />,
-      title: "Direito de Família",
-      description: "Divórcio, guarda, pensão alimentícia e união estável.",
-      features: ["Divórcio", "Guarda compartilhada", "Pensão alimentícia", "Inventário"]
+      title: "Direito de Família e Sucessões",
+      description: "Divórcio, guarda, sucessões e planejamento sucessório.",
+      features: ["Divórcio consensual", "Inventário", "Testamentos", "Planejamento sucessório"]
     },
     {
-      icon: <Briefcase className="w-8 h-8" />,
-      title: "Direito do Consumidor",
-      description: "Proteção aos direitos do consumidor e responsabilidade civil.",
-      features: ["Defeitos de produtos", "Serviços inadequados", "Negativação indevida", "Danos morais"]
+      icon: <Gavel className="w-8 h-8" />,
+      title: "Direito Civil",
+      description: "Contratos, responsabilidade civil, direitos reais e obrigações.",
+      features: ["Contratos em geral", "Indenizações", "Direito imobiliário", "Responsabilidade civil"]
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Direito do Trabalho",
+      description: "Direitos trabalhistas, rescisões e relações de trabalho.",
+      features: ["Ações trabalhistas", "FGTS e PIS", "Rescisões contratuais", "Assédio moral"]
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Direito Previdenciário",
+      description: "Benefícios previdenciários e aposentadorias.",
+      features: ["Aposentadorias", "Auxílios", "Pensões", "Revisão de benefícios"]
     }
   ];
 

@@ -17,27 +17,27 @@ const Contact = () => {
       icon: <MapPin className="w-6 h-6" />,
       title: "Endereço",
       details: [
-        "Av. Paulista, 1000 - Sala 1501",
-        "Bela Vista, São Paulo - SP",
-        "CEP: 01310-100"
+        "Londrina - PR",
+        "Atendimento presencial",
+        "mediante agendamento"
       ]
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Telefones",
+      title: "Telefone",
       details: [
-        "(11) 3333-4444",
-        "(11) 99999-8888",
-        "WhatsApp: (11) 99999-7777"
+        "(43) 99902-2629",
+        "WhatsApp disponível",
+        "Atendimento personalizado"
       ]
     },
     {
       icon: <Mail className="w-6 h-6" />,
-      title: "E-mails",
+      title: "E-mail",
       details: [
-        "contato@advocaciasilva.com.br",
-        "atendimento@advocaciasilva.com.br",
-        "emergencia@advocaciasilva.com.br"
+        "juridico@diaspiresadvocacia.com.br",
+        "Resposta em até 24h",
+        "Consulta inicial gratuita"
       ]
     },
     {
@@ -94,12 +94,12 @@ const Contact = () => {
                   <label className="text-sm font-medium text-primary">Área de Interesse</label>
                   <select className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground">
                     <option>Selecione uma área</option>
-                    <option>Direito Civil</option>
-                    <option>Direito Criminal</option>
-                    <option>Direito Trabalhista</option>
+                    <option>Direito Tributário</option>
                     <option>Direito Empresarial</option>
-                    <option>Direito de Família</option>
-                    <option>Direito do Consumidor</option>
+                    <option>Direito de Família e Sucessões</option>
+                    <option>Direito Civil</option>
+                    <option>Direito do Trabalho</option>
+                    <option>Direito Previdenciário</option>
                   </select>
                 </div>
               </div>
@@ -169,7 +169,7 @@ const Contact = () => {
                 </p>
                 <Button variant="contact" className="w-full">
                   <Phone className="w-4 h-4 mr-2" />
-                  Ligar Agora: (11) 99999-0000
+                  Ligar Agora: (43) 99902-2629
                 </Button>
               </CardContent>
             </Card>

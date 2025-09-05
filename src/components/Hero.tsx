@@ -10,12 +10,12 @@ const Hero = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold text-primary leading-tight">
-              Seu Direito é a
-              <span className="block text-accent">Nossa Prioridade</span>
+              Excelência Jurídica
+              <span className="block text-accent">Dias Pires Advocacia</span>
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-              Mais de 20 anos defendendo seus direitos com excelência e dedicação. 
-              Expertise em Direito Civil, Criminal, Trabalhista e Empresarial.
+              Soluções jurídicas especializadas com foco na excelência e dedicação. 
+              Expertise em Direito Tributário, Empresarial, Família, Civil, Trabalho e Previdenciário.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button variant="hero" size="lg" className="group">
@@ -24,7 +24,7 @@ const Hero = () => {
               </Button>
               <Button variant="contact" size="lg" className="group">
                 <Phone className="w-5 h-5" />
-                (11) 9999-9999
+                (43) 99902-2629
               </Button>
             </div>
             <div className="pt-8 space-y-2">

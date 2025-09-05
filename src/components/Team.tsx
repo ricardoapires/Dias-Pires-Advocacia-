@@ -11,40 +11,22 @@ import {
 const Team = () => {
   const team = [
     {
-      name: "Dr. João Silva",
-      role: "Sócio Fundador",
-      specialization: "Direito Civil e Criminal",
-      experience: "25 anos de experiência",
-      education: "Doutor em Direito - USP",
-      description: "Especialista em casos complexos de direito civil e criminal, com ampla experiência em júri popular.",
-      achievements: ["OAB/SP desde 1998", "Mais de 500 casos vencidos", "Professor universitário"]
+      name: "Dra. Renata Lígia Moreira Dias Pires",
+      role: "Sócia Fundadora",
+      specialization: "Direito Tributário e Empresarial",
+      experience: "Ampla experiência em direito tributário",
+      education: "Especialista em Direito Tributário",
+      description: "Especialista em planejamento tributário e consultoria empresarial, com foco em soluções personalizadas para empresas.",
+      achievements: ["Especialista em Direito Tributário", "Consultoria empresarial", "Planejamento fiscal"]
     },
     {
-      name: "Dra. Maria Santos",
-      role: "Sócia",
-      specialization: "Direito Trabalhista e Previdenciário",
-      experience: "18 anos de experiência",
-      education: "Mestre em Direito do Trabalho - PUC",
-      description: "Referência em direito trabalhista, com foco em grandes ações e questões previdenciárias.",
-      achievements: ["Especialista em TST", "Palestrante nacional", "Consultora empresarial"]
-    },
-    {
-      name: "Dr. Carlos Oliveira",
-      role: "Advogado Senior",
-      specialization: "Direito Empresarial",
-      experience: "15 anos de experiência",
-      education: "MBA em Direito Empresarial - FGV",
-      description: "Especialista em direito societário e recuperação judicial, atendendo grandes empresas.",
-      achievements: ["Consultor jurídico", "Especialista em M&A", "Compliance Officer"]
-    },
-    {
-      name: "Dra. Ana Costa",
-      role: "Advogada",
-      specialization: "Direito de Família",
-      experience: "12 anos de experiência",
-      education: "Especialista em Direito de Família - Mackenzie",
-      description: "Dedicada ao direito de família, com abordagem humanizada e foco na mediação.",
-      achievements: ["Mediadora certificada", "Especialista em guarda", "Conselheira tutelar"]
+      name: "Dr. Ricardo Alvin Pires",
+      role: "Sócio",
+      specialization: "Direito de Família e Previdenciário",
+      experience: "Vasta experiência em direito de família",
+      education: "Especialista em Direito de Família e Sucessões",
+      description: "Dedicado ao direito de família e sucessões, oferecendo soluções eficazes e humanizadas para questões familiares.",
+      achievements: ["Especialista em sucessões", "Mediação familiar", "Direito previdenciário"]
     }
   ];
 
@@ -61,7 +43,7 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {team.map((member, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-accent/30">
               <CardHeader className="text-center pb-4">

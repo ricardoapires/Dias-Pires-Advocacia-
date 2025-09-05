@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Scale className="w-8 h-8 text-accent" />
-            <span className="text-2xl font-bold text-primary">Advocacia Silva</span>
+            <span className="text-2xl font-bold text-primary">Dias Pires Advocacia</span>
           </div>
 
           {/* Desktop Navigation */}

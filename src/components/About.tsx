@@ -11,24 +11,24 @@ import {
 const About = () => {
   const stats = [
     {
-      icon: <Calendar className="w-6 h-6" />,
-      number: "20+",
-      label: "Anos de Experiência"
+      icon: <Award className="w-6 h-6" />,
+      number: "100%",
+      label: "Dedicação aos Clientes"
     },
     {
       icon: <Users className="w-6 h-6" />,
-      number: "1000+",
-      label: "Clientes Atendidos"
+      number: "6",
+      label: "Áreas de Atuação"
     },
     {
-      icon: <Award className="w-6 h-6" />,
-      number: "95%",
-      label: "Taxa de Sucesso"
+      icon: <CheckCircle className="w-6 h-6" />,
+      number: "24h",
+      label: "Resposta Inicial"
     },
     {
       icon: <TrendingUp className="w-6 h-6" />,
-      number: "24/7",
-      label: "Atendimento"
+      number: "Gratuita",
+      label: "Primeira Consulta"
     }
   ];
 
@@ -48,24 +48,24 @@ const About = () => {
           <div className="space-y-6">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-                Sobre o Escritório
+                Sobre o Dias Pires Advocacia
               </h2>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Fundado em 2003, o Escritório Silva tem se destacado pela excelência 
-                na prestação de serviços jurídicos, sempre priorizando os interesses 
-                e direitos dos nossos clientes.
+                O Dias Pires Advocacia oferece soluções jurídicas especializadas,
+                sempre priorizando a excelência no atendimento e a defesa dos 
+                interesses dos nossos clientes.
               </p>
             </div>
 
             <div className="space-y-4">
               <p className="text-muted-foreground leading-relaxed">
-                Nossa equipe é composta por advogados altamente qualificados, com 
-                especializações nas mais diversas áreas do direito. Acreditamos que 
-                cada caso é único e merece uma atenção especial e estratégia personalizada.
+                Nossa equipe é especializada nas mais diversas áreas do direito, 
+                oferecendo atendimento personalizado e estratégias jurídicas eficazes
+                para cada caso específico.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Com mais de duas décadas no mercado, construímos nossa reputação com 
-                base na confiança, transparência e resultados efetivos para nossos clientes.
+                Com foco na transparência e ética profissional, construímos 
+                relacionamentos sólidos baseados na confiança e resultados efetivos.
               </p>
             </div>
 
