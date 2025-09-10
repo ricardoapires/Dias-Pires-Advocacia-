@@ -47,9 +47,9 @@ const Team = () => {
           {team.map((member, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-accent/30">
               <CardHeader className="text-center pb-4">
-                {/* Avatar placeholder with initials */}
-                <div className="w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-4 text-white text-xl font-bold shadow-lg">
-                  {member.name.split(' ').map(n => n[0]).join('')}
+                {/* Simple photo placeholder circle */}
+                <div className="w-24 h-24 bg-muted border-2 border-border rounded-full flex items-center justify-center mx-auto mb-4 text-muted-foreground">
+                  <div className="text-xs">Foto</div>
                 </div>
                 <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors">
                   {member.name}

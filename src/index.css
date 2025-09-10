@@ -44,9 +44,9 @@ html {
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
 
-    /* Bright yellow accent like Machado Meyer */
-    --accent: 58 100% 68%;
-    --accent-foreground: 0 0% 9%;
+    /* Dark gold accent for more discrete look */
+    --accent: 36 75% 45%;
+    --accent-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96%;
     --secondary-foreground: 0 0% 9%;
@@ -63,12 +63,12 @@ html {
 
     /* Clean gradients */
     --gradient-primary: linear-gradient(135deg, hsl(0 0% 9%), hsl(0 0% 15%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 0% 9%) 0%, hsl(0 0% 15%) 50%, hsl(58 100% 68% / 0.1) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 9%) 0%, hsl(0 0% 15%) 50%, hsl(36 75% 45% / 0.1) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
     
     /* Clean shadows */
     --shadow-elegant: 0 10px 40px -10px hsl(0 0% 9% / 0.15);
-    --shadow-glow: 0 0 30px hsl(58 100% 68% / 0.3);
+    --shadow-glow: 0 0 30px hsl(36 75% 45% / 0.3);
     --shadow-card: 0 4px 20px -4px hsl(0 0% 9% / 0.1);
     
     /* Smooth transitions */
@@ -100,8 +100,8 @@ html {
     --primary: 0 0% 98%;
     --primary-foreground: 0 0% 9%;
 
-    --accent: 58 100% 68%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 36 75% 45%;
+    --accent-foreground: 0 0% 98%;
 
     --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 98%;

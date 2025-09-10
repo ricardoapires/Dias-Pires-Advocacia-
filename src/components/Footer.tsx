@@ -73,8 +73,8 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 mt-1 text-accent flex-shrink-0" />
                 <div className="text-primary-foreground/80">
-                  <div>Londrina - PR</div>
-                  <div>Atendimento mediante agendamento</div>
+                  <div>Avenida Independência, n.º 1.315 - Centro</div>
+                  <div>Bela Vista do Paraíso - PR</div>
                 </div>
               </div>
               <div className="flex items-center space-x-3">

@@ -52,12 +52,12 @@ const Hero = () => {
               className="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover"
             />
             <div className="absolute bottom-6 left-6 bg-background/95 backdrop-blur-sm rounded-lg p-4 shadow-lg">
-              <div className="text-2xl font-bold text-primary">20+</div>
+              <div className="text-2xl font-bold text-primary">10+</div>
               <div className="text-sm text-muted-foreground">Anos de Experiência</div>
             </div>
             <div className="absolute top-6 right-6 bg-accent/10 backdrop-blur-sm rounded-lg p-4 border border-accent/20">
-              <div className="text-2xl font-bold text-accent">1000+</div>
-              <div className="text-sm text-accent-foreground">Casos Vencidos</div>
+              <div className="text-2xl font-bold text-accent">100+</div>
+              <div className="text-sm text-accent-foreground">Clientes Atendidos</div>
             </div>
           </div>
         </div>
