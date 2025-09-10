@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Scale } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Logo from "./Logo";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,14 +15,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
+    <header className="fixed top-0 w-full bg-primary border-b border-primary/20 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <Scale className="w-8 h-8 text-accent" />
-            <span className="text-2xl font-bold text-primary">Dias Pires Advocacia</span>
-          </div>
+          <Logo className="text-white" />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -29,12 +27,12 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-accent transition-colors duration-200 font-medium"
+                className="text-white hover:text-accent transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>
             ))}
-            <Button variant="professional" size="lg">
+            <Button variant="accent" size="lg">
               Consulta Gratuita
             </Button>
           </nav>
@@ -43,7 +41,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden text-white hover:text-accent"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -52,19 +50,19 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <nav className="md:hidden mt-4 pb-4">
-            <div className="flex flex-col space-y-4">
+          <nav className="md:hidden mt-4 pb-4 border-t border-primary/20">
+            <div className="flex flex-col space-y-4 pt-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-accent transition-colors duration-200 font-medium py-2"
+                  className="text-white hover:text-accent transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <Button variant="professional" className="self-start mt-4">
+              <Button variant="accent" className="self-start mt-4">
                 Consulta Gratuita
               </Button>
             </div>

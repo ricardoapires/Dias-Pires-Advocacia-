@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-law-office.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-20 min-h-screen flex items-center bg-gradient-to-br from-background via-background to-secondary/30">
+    <section id="home" className="pt-20 min-h-screen flex items-center bg-background">
       <div className="container mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -18,11 +18,11 @@ const Hero = () => {
               Expertise em Direito Tributário, Empresarial, Família, Civil, Trabalho e Previdenciário.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="hero" size="lg" className="group">
+              <Button variant="default" size="lg" className="group bg-primary hover:bg-primary/90">
                 Agende sua Consulta
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="contact" size="lg" className="group">
+              <Button variant="outline" size="lg" className="group">
                 <Phone className="w-5 h-5" />
                 (43) 99902-2629
               </Button>

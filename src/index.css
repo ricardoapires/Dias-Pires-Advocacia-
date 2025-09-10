@@ -32,44 +32,44 @@ html {
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 210 17% 14%;
+    --foreground: 0 0% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 17% 14%;
+    --card-foreground: 0 0% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 17% 14%;
+    --popover-foreground: 0 0% 9%;
 
-    /* Professional navy blue primary */
-    --primary: 215 30% 18%;
+    /* Clean black primary */
+    --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
 
-    /* Elegant gold accent */
-    --accent: 45 93% 47%;
-    --accent-foreground: 215 30% 18%;
+    /* Bright yellow accent like Machado Meyer */
+    --accent: 58 100% 68%;
+    --accent-foreground: 0 0% 9%;
 
-    --secondary: 210 20% 95%;
-    --secondary-foreground: 210 17% 14%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 210 20% 95%;
-    --muted-foreground: 210 12% 55%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 210 20% 90%;
-    --input: 210 20% 95%;
-    --ring: 215 30% 18%;
+    --border: 0 0% 89%;
+    --input: 0 0% 89%;
+    --ring: 0 0% 9%;
 
-    /* Professional gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(215 30% 18%), hsl(215 35% 25%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 30% 18%) 0%, hsl(215 35% 25%) 50%, hsl(45 93% 47% / 0.1) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(210 20% 98%));
+    /* Clean gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 9%), hsl(0 0% 15%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 9%) 0%, hsl(0 0% 15%) 50%, hsl(58 100% 68% / 0.1) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
     
-    /* Professional shadows */
-    --shadow-elegant: 0 10px 40px -10px hsl(215 30% 18% / 0.15);
-    --shadow-glow: 0 0 30px hsl(45 93% 47% / 0.2);
-    --shadow-card: 0 4px 20px -4px hsl(215 30% 18% / 0.1);
+    /* Clean shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(0 0% 9% / 0.15);
+    --shadow-glow: 0 0 30px hsl(58 100% 68% / 0.3);
+    --shadow-card: 0 4px 20px -4px hsl(0 0% 9% / 0.1);
     
     /* Smooth transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -88,32 +88,32 @@ html {
   }
 
   .dark {
-    --background: 215 30% 12%;
+    --background: 0 0% 9%;
     --foreground: 0 0% 98%;
 
-    --card: 215 30% 15%;
+    --card: 0 0% 11%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 215 30% 15%;
+    --popover: 0 0% 11%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 0 0% 98%;
-    --primary-foreground: 215 30% 18%;
+    --primary-foreground: 0 0% 9%;
 
-    --accent: 45 93% 47%;
-    --accent-foreground: 215 30% 18%;
+    --accent: 58 100% 68%;
+    --accent-foreground: 0 0% 9%;
 
-    --secondary: 215 25% 20%;
+    --secondary: 0 0% 15%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 215 25% 20%;
-    --muted-foreground: 210 12% 65%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 215 25% 25%;
-    --input: 215 25% 25%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
     --ring: 0 0% 83.1%;
 
     --sidebar-background: 240 5.9% 10%;
