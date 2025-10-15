@@ -1,15 +1,11 @@
 import logo from "@/assets/logo-dias-pires.png";
-
-const Logo = ({ className = "" }: { className?: string }) => {
-  return (
-    <div className={`${className}`}>
-      <img 
-        src={logo} 
-        alt="Dias Pires Advocacia" 
-        className="h-20 lg:h-24 w-auto"
-      />
-    </div>
-  );
+const Logo = ({
+  className = ""
+}: {
+  className?: string;
+}) => {
+  return <div className={`${className}`}>
+      
+    </div>;
 };
-
 export default Logo;
