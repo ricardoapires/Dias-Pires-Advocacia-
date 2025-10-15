@@ -6,7 +6,7 @@ const Logo = ({ className = "" }: { className?: string }) => {
       <img 
         src={logo} 
         alt="Dias Pires Advocacia" 
-        className="h-12 lg:h-16 w-auto"
+        className="h-16 lg:h-20 w-auto"
       />
     </div>
   );
