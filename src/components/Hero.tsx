@@ -4,71 +4,60 @@ import heroImage from "@/assets/hero-law-office.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-24 min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-background via-secondary/20 to-accent/5">
-      {/* Decorative elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-      
-      <div className="container mx-auto px-4 py-16 relative z-10">
-        <div className="grid lg:grid-cols-5 gap-8 items-center">
-          {/* Text Content - Takes 3 columns */}
-          <div className="lg:col-span-3 space-y-8">
-            <div className="inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full mb-4">
-              <span className="text-accent font-semibold text-sm">Escritório Especializado</span>
-            </div>
-            
-            <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-              <span className="text-primary">Excelência</span>
-              <br />
-              <span className="text-accent">Jurídica</span>
+    <section id="home" className="pt-20 min-h-screen flex items-center bg-background">
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text Content */}
+          <div className="space-y-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-primary leading-tight">
+              Excelência Jurídica
+              <span className="block text-accent">Dias Pires Advocacia</span>
             </h1>
-            
-            <div className="space-y-4">
-              <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
-                Dias Pires Advocacia
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-                Soluções jurídicas especializadas com foco na excelência e dedicação. 
-                Expertise em Direito Tributário, Empresarial, Família, Civil, Trabalho e Previdenciário.
-              </p>
-            </div>
-            
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
+              Soluções jurídicas especializadas com foco na excelência e dedicação. 
+              Expertise em Direito Tributário, Empresarial, Família, Civil, Trabalho e Previdenciário.
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="premium" size="lg" className="group">
+              <Button variant="default" size="lg" className="group bg-primary hover:bg-primary/90">
                 Agende sua Consulta
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="hero" size="lg" className="group">
+              <Button variant="outline" size="lg" className="group">
                 <Phone className="w-5 h-5" />
                 (43) 99902-2629
               </Button>
             </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
-              <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-4">
-                <div className="text-2xl font-bold text-accent">10+</div>
-                <div className="text-sm text-muted-foreground">Anos Experiência</div>
+            <div className="pt-8 space-y-2">
+              <div className="flex items-center text-sm text-muted-foreground">
+                <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                Consulta inicial gratuita
               </div>
-              <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-4">
-                <div className="text-2xl font-bold text-accent">100+</div>
-                <div className="text-sm text-muted-foreground">Clientes Satisfeitos</div>
+              <div className="flex items-center text-sm text-muted-foreground">
+                <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                Atendimento 24/7 para emergências
               </div>
-              <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-lg p-4">
-                <div className="text-2xl font-bold text-accent">24/7</div>
-                <div className="text-sm text-muted-foreground">Emergências</div>
+              <div className="flex items-center text-sm text-muted-foreground">
+                <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
+                Mais de 1000 casos bem-sucedidos
               </div>
             </div>
           </div>
 
-          {/* Image - Takes 2 columns */}
-          <div className="lg:col-span-2 relative">
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-accent/30 to-primary/30 rounded-3xl blur-2xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
-              <img
-                src={heroImage}
-                alt="Escritório de advocacia profissional"
-                className="relative rounded-2xl shadow-2xl w-full h-[600px] object-cover border-4 border-background"
-              />
+          {/* Image */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-accent/20 to-primary/20 rounded-2xl blur-xl transform scale-105"></div>
+            <img
+              src={heroImage}
+              alt="Escritório de advocacia profissional"
+              className="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+            />
+            <div className="absolute bottom-6 left-6 bg-background/95 backdrop-blur-sm rounded-lg p-4 shadow-lg">
+              <div className="text-2xl font-bold text-primary">10+</div>
+              <div className="text-sm text-muted-foreground">Anos de Experiência</div>
+            </div>
+            <div className="absolute top-6 right-6 bg-accent/10 backdrop-blur-sm rounded-lg p-4 border border-accent/20">
+              <div className="text-2xl font-bold text-accent">100+</div>
+              <div className="text-sm text-accent-foreground">Clientes Atendidos</div>
             </div>
           </div>
         </div>

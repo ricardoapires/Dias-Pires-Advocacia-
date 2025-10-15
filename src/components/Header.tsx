@@ -15,24 +15,24 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b border-border/50 z-50 shadow-sm">
-      <div className="container mx-auto px-4 py-3">
+    <header className="fixed top-0 w-full bg-primary border-b border-primary/20 z-50">
+      <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Logo />
+          <Logo className="text-white" />
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-accent transition-colors duration-200 font-medium text-sm relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full"
+                className="text-white hover:text-accent transition-colors duration-200 font-medium"
               >
                 {item.name}
               </a>
             ))}
-            <Button variant="accent" size="lg" className="ml-4">
+            <Button variant="accent" size="lg">
               Consulta Gratuita
             </Button>
           </nav>
@@ -41,7 +41,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden text-white hover:text-accent"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -50,13 +50,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-border/50 animate-fade-in">
-            <div className="flex flex-col space-y-3 pt-4">
+          <nav className="md:hidden mt-4 pb-4 border-t border-primary/20">
+            <div className="flex flex-col space-y-4 pt-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-accent transition-colors duration-200 font-medium py-2"
+                  className="text-white hover:text-accent transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

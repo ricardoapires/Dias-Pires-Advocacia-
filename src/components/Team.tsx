@@ -5,8 +5,7 @@ import {
   Mail, 
   Phone,
   GraduationCap,
-  Scale,
-  ArrowRight
+  Scale
 } from "lucide-react";
 
 const Team = () => {
@@ -32,73 +31,54 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-24 bg-background relative overflow-hidden">
-      {/* Decorative background */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-10 w-72 h-72 bg-accent rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-primary rounded-full blur-3xl"></div>
-      </div>
-      
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block px-4 py-2 bg-accent/10 border border-accent/20 rounded-full mb-6">
-            <span className="text-accent font-semibold text-sm">Especialistas</span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+    <section id="team" className="py-20 bg-gradient-to-b from-secondary/20 to-background">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
             Nossa Equipe
           </h2>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Profissionais altamente qualificados e especializados, prontos para 
             defender seus direitos com dedicação e expertise
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {team.map((member, index) => (
-            <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-border/50 hover:border-accent/50 bg-card/50 backdrop-blur-sm overflow-hidden">
-              {/* Accent bar on top */}
-              <div className="h-2 bg-gradient-to-r from-accent to-primary"></div>
-              
-              <CardHeader className="text-center pb-4 pt-8">
-                {/* Photo placeholder with gradient border */}
-                <div className="relative w-32 h-32 mx-auto mb-6">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent to-primary rounded-full opacity-20 blur-xl"></div>
-                  <div className="relative w-32 h-32 bg-gradient-to-br from-muted to-secondary border-4 border-accent/20 rounded-full flex items-center justify-center group-hover:border-accent/50 transition-colors">
-                    <Scale className="w-12 h-12 text-muted-foreground/50" />
-                  </div>
+            <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-accent/30">
+              <CardHeader className="text-center pb-4">
+                {/* Simple photo placeholder circle */}
+                <div className="w-24 h-24 bg-muted border-2 border-border rounded-full flex items-center justify-center mx-auto mb-4 text-muted-foreground">
+                  <div className="text-xs">Foto</div>
                 </div>
-                
-                <h3 className="text-2xl font-bold text-primary group-hover:text-accent transition-colors mb-2">
+                <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors">
                   {member.name}
                 </h3>
-                <div className="inline-block px-3 py-1 bg-accent/10 border border-accent/20 rounded-full mb-2">
-                  <p className="text-accent font-semibold text-sm">{member.role}</p>
-                </div>
-                <p className="text-muted-foreground">{member.specialization}</p>
+                <p className="text-accent font-medium">{member.role}</p>
+                <p className="text-sm text-muted-foreground">{member.specialization}</p>
               </CardHeader>
-              
-              <CardContent className="space-y-6 px-6 pb-8">
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="flex items-start text-sm bg-secondary/50 rounded-lg p-3">
-                    <Scale className="w-4 h-4 mr-2 text-accent mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">{member.experience}</span>
+              <CardContent className="space-y-4">
+                <div className="space-y-2">
+                  <div className="flex items-center text-sm text-muted-foreground">
+                    <Scale className="w-4 h-4 mr-2 text-accent" />
+                    {member.experience}
                   </div>
-                  <div className="flex items-start text-sm bg-secondary/50 rounded-lg p-3">
-                    <GraduationCap className="w-4 h-4 mr-2 text-accent mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">{member.education}</span>
+                  <div className="flex items-center text-sm text-muted-foreground">
+                    <GraduationCap className="w-4 h-4 mr-2 text-accent" />
+                    {member.education}
                   </div>
                 </div>
 
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   {member.description}
                 </p>
 
-                <div className="space-y-2 bg-accent/5 rounded-lg p-4 border border-accent/10">
-                  <h4 className="text-sm font-bold text-primary mb-3">Principais Conquistas</h4>
-                  <ul className="space-y-2">
+                <div className="space-y-2">
+                  <h4 className="text-sm font-semibold text-primary">Principais Conquistas:</h4>
+                  <ul className="space-y-1">
                     {member.achievements.map((achievement, idx) => (
-                      <li key={idx} className="text-sm text-muted-foreground flex items-start">
-                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2 mt-2 flex-shrink-0"></div>
+                      <li key={idx} className="text-xs text-muted-foreground flex items-start">
+                        <div className="w-1 h-1 bg-accent rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         {achievement}
                       </li>
                     ))}
@@ -106,13 +86,13 @@ const Team = () => {
                 </div>
 
                 <div className="flex justify-center space-x-2 pt-4 border-t border-border">
-                  <Button variant="ghost" size="icon" className="hover:text-accent hover:bg-accent/10">
+                  <Button variant="ghost" size="icon" className="hover:text-accent">
                     <Linkedin className="w-4 h-4" />
                   </Button>
-                  <Button variant="ghost" size="icon" className="hover:text-accent hover:bg-accent/10">
+                  <Button variant="ghost" size="icon" className="hover:text-accent">
                     <Mail className="w-4 h-4" />
                   </Button>
-                  <Button variant="ghost" size="icon" className="hover:text-accent hover:bg-accent/10">
+                  <Button variant="ghost" size="icon" className="hover:text-accent">
                     <Phone className="w-4 h-4" />
                   </Button>
                 </div>
@@ -121,23 +101,19 @@ const Team = () => {
           ))}
         </div>
 
-        <div className="max-w-3xl mx-auto">
-          <Card className="border-accent/30 bg-gradient-to-br from-accent/10 via-accent/5 to-primary/5 backdrop-blur-sm overflow-hidden">
-            <div className="h-1 bg-gradient-to-r from-primary via-accent to-primary"></div>
-            <CardContent className="p-10 text-center">
-              <div className="w-20 h-20 bg-gradient-to-br from-accent/20 to-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Scale className="w-10 h-10 text-accent" />
-              </div>
-              <h3 className="text-3xl font-bold text-primary mb-4">
+        <div className="text-center mt-12">
+          <Card className="max-w-2xl mx-auto border-accent/20 bg-gradient-to-r from-accent/5 to-primary/5">
+            <CardContent className="p-8 text-center">
+              <Scale className="w-12 h-12 text-accent mx-auto mb-4" />
+              <h3 className="text-2xl font-bold text-primary mb-4">
                 Fale com Nossa Equipe
               </h3>
-              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              <p className="text-muted-foreground mb-6">
                 Entre em contato conosco para uma consulta personalizada. 
                 Nossos especialistas estão prontos para analisar seu caso.
               </p>
-              <Button variant="premium" size="lg" className="group">
+              <Button variant="professional" size="lg">
                 Agendar Consulta
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
             </CardContent>
           </Card>
