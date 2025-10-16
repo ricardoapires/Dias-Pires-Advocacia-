@@ -23,7 +23,7 @@ const Hero = () => {
               </Button>
               <Button variant="outline" size="lg" className="group">
                 <Phone className="w-5 h-5" />
-                (43) 99902-2629
+                (43) 99627-3131
               </Button>
             </div>
             <div className="pt-8 space-y-2">
@@ -37,7 +37,7 @@ const Hero = () => {
               </div>
               <div className="flex items-center text-sm text-muted-foreground">
                 <div className="w-2 h-2 bg-accent rounded-full mr-3"></div>
-                Mais de 1000 casos bem-sucedidos
+                Atendimento humanizado e personalizado
               </div>
             </div>
           </div>

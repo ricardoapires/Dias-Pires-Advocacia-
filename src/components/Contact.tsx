@@ -26,7 +26,7 @@ const Contact = () => {
       icon: <Phone className="w-6 h-6" />,
       title: "Telefone",
       details: [
-        "(43) 99902-2629",
+        "(43) 99627-3131",
         "WhatsApp disponível",
         "Atendimento personalizado"
       ]
@@ -169,7 +169,7 @@ const Contact = () => {
                 </p>
                 <Button variant="contact" className="w-full">
                   <Phone className="w-4 h-4 mr-2" />
-                  Ligar Agora: (43) 99902-2629
+                  Ligar Agora: (43) 99627-3131
                 </Button>
               </CardContent>
             </Card>

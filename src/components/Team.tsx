@@ -13,20 +13,20 @@ const Team = () => {
     {
       name: "Dra. Renata Lígia Moreira Dias Pires",
       role: "Sócia Fundadora",
+      specialization: "Direito de Família e Previdenciário",
+      experience: "Vasta experiência em direito de família",
+      education: "Especialista em Direito de Família e Sucessões",
+      description: "Dedicada ao direito de família e sucessões, oferecendo soluções eficazes e humanizadas para questões familiares.",
+      achievements: ["Especialista em sucessões", "Mediação familiar", "Direito previdenciário"]
+    },
+    {
+      name: "Dr. Ricardo Alvin Pires",
+      role: "Sócio",
       specialization: "Direito Tributário e Empresarial",
       experience: "Ampla experiência em direito tributário",
       education: "Especialista em Direito Tributário",
       description: "Especialista em planejamento tributário e consultoria empresarial, com foco em soluções personalizadas para empresas.",
       achievements: ["Especialista em Direito Tributário", "Consultoria empresarial", "Planejamento fiscal"]
-    },
-    {
-      name: "Dr. Ricardo Alvin Pires",
-      role: "Sócio",
-      specialization: "Direito de Família e Previdenciário",
-      experience: "Vasta experiência em direito de família",
-      education: "Especialista em Direito de Família e Sucessões",
-      description: "Dedicado ao direito de família e sucessões, oferecendo soluções eficazes e humanizadas para questões familiares.",
-      achievements: ["Especialista em sucessões", "Mediação familiar", "Direito previdenciário"]
     }
   ];
 
