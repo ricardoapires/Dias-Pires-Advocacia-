@@ -17,9 +17,9 @@ const Contact = () => {
       icon: <MapPin className="w-6 h-6" />,
       title: "Endereço",
       details: [
-        "Londrina - PR",
-        "Atendimento presencial",
-        "mediante agendamento"
+        "Avenida Independência, n.º 1.315",
+        "Centro - Bela Vista do Paraíso-PR",
+        "Atendimento mediante agendamento"
       ]
     },
     {
