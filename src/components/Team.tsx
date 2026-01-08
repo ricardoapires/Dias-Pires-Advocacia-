@@ -21,7 +21,7 @@ const Team = () => {
     },
     {
       name: "Dr. Ricardo Alvin Pires",
-      role: "Sócio",
+      role: "Consultor e Advogado",
       specialization: "Direito Tributário e Empresarial",
       experience: "Ampla experiência em direito tributário",
       education: "Especialista em Direito Tributário",
