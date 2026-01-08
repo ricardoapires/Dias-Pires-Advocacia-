@@ -32,8 +32,10 @@ const Header = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="accent" size="lg">
-              Consulta Gratuita
+            <Button variant="accent" size="lg" asChild>
+              <a href="https://wa.me/5543996273131" target="_blank" rel="noopener noreferrer">
+                Consulta Gratuita
+              </a>
             </Button>
           </nav>
 
@@ -62,8 +64,10 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="accent" className="self-start mt-4">
-                Consulta Gratuita
+              <Button variant="accent" className="self-start mt-4" asChild>
+                <a href="https://wa.me/5543996273131" target="_blank" rel="noopener noreferrer">
+                  Consulta Gratuita
+                </a>
               </Button>
             </div>
           </nav>
