@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
-import Logo from "./Logo";
+import { Menu, X, MessageCircle } from "lucide-react";
+import logoImage from "@/assets/logo-dias-pires.jpeg";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,11 +15,17 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-primary border-b border-primary/20 z-50">
-      <div className="container mx-auto px-4 py-4">
+    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Logo className="text-white" />
+          <a href="#home">
+            <img 
+              src={logoImage} 
+              alt="Dias Pires Advocacia" 
+              className="h-12 md:h-14 w-auto"
+            />
+          </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -27,13 +33,14 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-accent transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-medium text-sm tracking-wide"
               >
                 {item.name}
               </a>
             ))}
-            <Button variant="accent" size="lg" asChild>
+            <Button size="lg" className="bg-gray-900 text-white hover:bg-gray-800" asChild>
               <a href="https://wa.me/5543996273131" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" />
                 Consulta Gratuita
               </a>
             </Button>
@@ -43,7 +50,7 @@ const Header = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden text-white hover:text-accent"
+            className="md:hidden text-gray-700 hover:text-gray-900"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -52,20 +59,21 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-primary/20">
+          <nav className="md:hidden mt-4 pb-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4 pt-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:text-accent transition-colors duration-200 font-medium py-2"
+                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <Button variant="accent" className="self-start mt-4" asChild>
+              <Button className="self-start mt-4 bg-gray-900 text-white hover:bg-gray-800" asChild>
                 <a href="https://wa.me/5543996273131" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-4 h-4 mr-2" />
                   Consulta Gratuita
                 </a>
               </Button>
