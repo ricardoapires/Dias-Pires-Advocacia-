@@ -27,10 +27,7 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-muted-foreground tracking-widest uppercase mb-6">EXCELÊNCIA JURÍDICA MODERNA E EFICIENTE</p>
 
             {/* Description */}
-            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed mb-12 max-w-2xl font-light">
-              Soluções jurídicas especializadas com foco na excelência e dedicação. 
-              Expertise em Direito Tributário, Empresarial, Família, Civil, Trabalho e Previdenciário.
-            </p>
+            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed mb-12 max-w-2xl font-light">Soluções jurídicas especializadas, com foco na excelência e dedicação. Expertise em Direito Tributário, Empresarial, Família, Civil, Trabalho e Previdenciário.</p>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
