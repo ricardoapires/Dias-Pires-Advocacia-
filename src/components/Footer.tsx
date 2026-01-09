@@ -1,4 +1,5 @@
-import { Scale, MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import logoLight from "@/assets/logo-light.png";
 
 const Footer = () => {
   return (
@@ -7,10 +8,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Scale className="w-8 h-8 text-accent" />
-              <span className="text-2xl font-bold">Dias Pires Advocacia</span>
-            </div>
+            <a href="#home">
+              <img 
+                src={logoLight} 
+                alt="Dias Pires Advocacia" 
+                className="h-16 w-auto"
+              />
+            </a>
             <p className="text-primary-foreground/80 text-sm">
               Soluções jurídicas especializadas com foco na excelência e dedicação. 
               Seu direito é a nossa prioridade.
