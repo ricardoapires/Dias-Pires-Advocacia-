@@ -2,17 +2,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, MessageCircle, Scale, Shield, Users } from "lucide-react";
 import heroImage from "@/assets/hero-law-office.jpg";
 import logoImage from "@/assets/logo-dias-pires.jpeg";
-
 const Hero = () => {
-  return (
-    <section id="home" className="relative min-h-screen flex flex-col overflow-hidden">
+  return <section id="home" className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Background Image with sophisticated overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Escritório de advocacia"
-          className="w-full h-full object-cover scale-105"
-        />
+        <img src={heroImage} alt="Escritório de advocacia" className="w-full h-full object-cover scale-105" />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background/60"></div>
       </div>
@@ -30,9 +24,7 @@ const Hero = () => {
             </div>
 
             {/* Tagline */}
-            <p className="text-lg md:text-xl text-muted-foreground tracking-widest uppercase mb-6">
-              Excelência Jurídica desde 2014
-            </p>
+            <p className="text-lg md:text-xl text-muted-foreground tracking-widest uppercase mb-6">EXCELÊNCIA JURÍDICA MODERNA E EFICIENTE</p>
 
             {/* Description */}
             <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed mb-12 max-w-2xl font-light">
@@ -42,11 +34,7 @@ const Hero = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
-              <a 
-                href="https://wa.me/5543996273131" 
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
+              <a href="https://wa.me/5543996273131" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="group w-full sm:w-auto bg-foreground text-background hover:bg-foreground/90 text-lg px-10 py-7 tracking-wide">
                   <MessageCircle className="w-5 h-5 mr-3" />
                   Agende sua Consulta
@@ -110,8 +98,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
