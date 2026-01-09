@@ -21,16 +21,6 @@ const Hero = () => {
       <div className="flex-1 flex items-center justify-center relative z-10">
         <div className="container mx-auto px-4 py-24">
           <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-            
-            {/* Logo */}
-            <div className="mb-8 relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-transparent via-foreground/5 to-transparent blur-xl"></div>
-              <img 
-                src={logoImage} 
-                alt="Dias Pires Advocacia" 
-                className="h-32 md:h-40 w-auto relative"
-              />
-            </div>
 
             {/* Elegant divider */}
             <div className="flex items-center gap-4 mb-8">
