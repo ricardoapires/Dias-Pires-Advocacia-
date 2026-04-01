@@ -8,6 +8,7 @@ import {
   Scale
 } from "lucide-react";
 import fotoRenata from "@/assets/foto-renata.png";
+import fotoRicardo from "@/assets/foto-ricardo.png";
 
 const Team = () => {
   const team = [
