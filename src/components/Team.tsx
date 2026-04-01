@@ -49,9 +49,13 @@ const Team = () => {
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-border/50 hover:border-accent/30">
               <CardHeader className="text-center pb-4">
                 {/* Simple photo placeholder circle */}
-                <div className="w-24 h-24 bg-muted border-2 border-border rounded-full flex items-center justify-center mx-auto mb-4 text-muted-foreground">
-                  <div className="text-xs">Foto</div>
-                </div>
+                {index === 0 ? (
+                  <img src={fotoRenata} alt={member.name} className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-2 border-border" />
+                ) : (
+                  <div className="w-24 h-24 bg-muted border-2 border-border rounded-full flex items-center justify-center mx-auto mb-4 text-muted-foreground">
+                    <div className="text-xs">Foto</div>
+                  </div>
+                )}
                 <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors">
                   {member.name}
                 </h3>
