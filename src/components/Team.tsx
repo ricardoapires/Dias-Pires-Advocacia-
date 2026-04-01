@@ -7,6 +7,7 @@ import {
   GraduationCap,
   Scale
 } from "lucide-react";
+import fotoRenata from "@/assets/foto-renata.png";
 
 const Team = () => {
   const team = [
