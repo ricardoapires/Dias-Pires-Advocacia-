@@ -21,11 +21,11 @@ const Header = () => {
     href: "#contact"
   }];
   return <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50">
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-4 py-1">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <a href="#home">
-            <img src={logoImage} alt="Dias Pires Advocacia" className="h-16 md:h-20 w-auto object-contain" />
+            <img src={logoImage} alt="Dias Pires Advocacia" className="h-10 md:h-14 w-auto object-contain" />
           </a>
 
           {/* Desktop Navigation */}
