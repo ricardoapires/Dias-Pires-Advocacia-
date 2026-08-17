@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useState } from "react";
 import { 
   MapPin, 
   Phone, 
@@ -11,7 +12,12 @@ import {
   Send
 } from "lucide-react";
 
+// Unified contact phone constant
+const CONTACT_PHONE = "(43) 99627-3131";
+
 const Contact = () => {
+  const [agreedToPrivacy, setAgreedToPrivacy] = useState(false);
+
   const contactInfo = [
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -26,7 +32,7 @@ const Contact = () => {
       icon: <Phone className="w-6 h-6" />,
       title: "Telefone",
       details: [
-        "(43) 99627-3131",
+        CONTACT_PHONE,
         "WhatsApp disponível",
         "Atendimento personalizado"
       ]
@@ -37,7 +43,7 @@ const Contact = () => {
       details: [
         "juridico@diaspiresadvocacia.com.br",
         "Resposta em até 24h",
-        "Consulta inicial gratuita"
+        "Atendimento personalizado"
       ]
     },
     {
@@ -59,8 +65,7 @@ const Contact = () => {
             Entre em Contato
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Estamos prontos para ajudá-lo. Entre em contato conosco e agende 
-            sua consulta gratuita para discutir seu caso
+            Entre em contato para agendar uma consulta e discutir seu caso.
           </p>
         </div>
 
@@ -114,12 +119,33 @@ const Contact = () => {
 
               <div className="bg-accent/5 rounded-lg p-4 border border-accent/20">
                 <p className="text-sm text-muted-foreground">
-                  <strong className="text-accent">Consulta Gratuita:</strong> A primeira consulta é sempre gratuita. 
                   Entraremos em contato em até 2 horas durante o horário comercial.
                 </p>
               </div>
 
-              <Button variant="hero" size="lg" className="w-full">
+              {/* LGPD Checkbox */}
+              <div className="flex items-start space-x-3">
+                <input
+                  type="checkbox"
+                  id="privacy-consent"
+                  checked={agreedToPrivacy}
+                  onChange={(e) => setAgreedToPrivacy(e.target.checked)}
+                  className="w-4 h-4 mt-1 rounded border-gray-300 cursor-pointer"
+                />
+                <label htmlFor="privacy-consent" className="text-sm text-muted-foreground cursor-pointer">
+                  Concordo com o tratamento dos meus dados conforme a{" "}
+                  <a href="#" className="text-accent hover:underline">
+                    Política de Privacidade
+                  </a>
+                </label>
+              </div>
+
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="w-full"
+                disabled={!agreedToPrivacy}
+              >
                 <Send className="w-5 h-5 mr-2" />
                 Enviar Mensagem
               </Button>
@@ -169,7 +195,7 @@ const Contact = () => {
                 </p>
                 <Button variant="contact" className="w-full">
                   <Phone className="w-4 h-4 mr-2" />
-                  Ligar Agora: (43) 99627-3131
+                  Ligar: {CONTACT_PHONE}
                 </Button>
               </CardContent>
             </Card>
