@@ -14,21 +14,23 @@ const Team = () => {
   const team = [
     {
       name: "Dra. Renata Lígia Moreira Dias Pires",
+      oab: "OAB/PR nº 121.511",
       role: "Sócia Fundadora",
       specialization: "Direito de Família e Previdenciário",
-      experience: "Vasta experiência em direito de família",
-      education: "Especialista em Direito de Família e Sucessões",
-      description: "Dedicada ao direito de família e sucessões, oferecendo soluções eficazes e humanizadas para questões familiares.",
-      achievements: ["Especialista em sucessões", "Mediação familiar", "Direito previdenciário"]
+      experience: "Atuação em Direito de Família e Sucessões",
+      education: "Atuação em Direito de Família e Sucessões",
+      description: "Atuação em Direito de Família e Sucessões, incluindo divórcio, inventário, testamentos e planejamento sucessório.",
+      achievements: ["Divórcio consensual", "Inventário", "Testamentos", "Planejamento sucessório"]
     },
     {
       name: "Dr. Ricardo Alvin Pires",
+      oab: "OAB/PR nº 58.332",
       role: "Consultor e Advogado",
       specialization: "Direito Tributário e Empresarial",
-      experience: "Ampla experiência em direito tributário",
-      education: "Especialista em Direito Tributário",
-      description: "Especialista em planejamento tributário e consultoria empresarial, com foco em soluções personalizadas para empresas.",
-      achievements: ["Especialista em Direito Tributário", "Consultoria empresarial", "Planejamento fiscal"]
+      experience: "Atuação em Direito Tributário e Empresarial",
+      education: "Atuação em Direito Tributário",
+      description: "Atuação em planejamento tributário e consultoria empresarial para empresas.",
+      achievements: ["Planejamento tributário", "Consultoria empresarial", "Defesa em autuações"]
     }
   ];
 
@@ -57,6 +59,7 @@ const Team = () => {
                 <h3 className="text-xl font-bold text-primary group-hover:text-accent transition-colors">
                   {member.name}
                 </h3>
+                <p className="text-sm text-muted-foreground font-medium">{member.oab}</p>
                 <p className="text-accent font-medium">{member.role}</p>
                 <p className="text-sm text-muted-foreground">{member.specialization}</p>
               </CardHeader>
@@ -77,7 +80,7 @@ const Team = () => {
                 </p>
 
                 <div className="space-y-2">
-                  <h4 className="text-sm font-semibold text-primary">Principais Conquistas:</h4>
+                  <h4 className="text-sm font-semibold text-primary">Áreas de Atuação:</h4>
                   <ul className="space-y-1">
                     {member.achievements.map((achievement, idx) => (
                       <li key={idx} className="text-xs text-muted-foreground flex items-start">
@@ -112,8 +115,7 @@ const Team = () => {
                 Fale com Nossa Equipe
               </h3>
               <p className="text-muted-foreground mb-6">
-                Entre em contato conosco para uma consulta personalizada. 
-                Nossos especialistas estão prontos para analisar seu caso.
+                Entre em contato conosco para agendar uma consulta e apresentar seu caso.
               </p>
               <Button variant="professional" size="lg">
                 Agendar Consulta
