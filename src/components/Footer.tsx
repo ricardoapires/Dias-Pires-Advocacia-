@@ -1,6 +1,9 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import logoLight from "@/assets/logo-light.png";
 
+// Unified contact phone constant
+const CONTACT_PHONE = "(43) 99627-3131";
+
 const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -16,8 +19,7 @@ const Footer = () => {
               />
             </a>
             <p className="text-primary-foreground/80 text-sm">
-              Soluções jurídicas especializadas com foco na excelência e dedicação. 
-              Seu direito é a nossa prioridade.
+              Escritório de advocacia atuante em Direito Tributário, Empresarial, Família e Sucessões, Civil, Trabalho e Previdenciário.
             </p>
             <div className="flex items-center space-x-2 text-sm">
               <div className="w-2 h-2 bg-accent rounded-full"></div>
@@ -83,7 +85,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-accent" />
-                <span className="text-primary-foreground/80">(43) 99902-2629</span>
+                <span className="text-primary-foreground/80">{CONTACT_PHONE}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-accent" />
@@ -113,9 +115,6 @@ const Footer = () => {
               <a href="#" className="text-primary-foreground/80 hover:text-accent transition-colors">
                 Termos de Uso
               </a>
-              <span className="text-accent font-medium">
-                Consulta inicial gratuita
-              </span>
             </div>
           </div>
         </div>
