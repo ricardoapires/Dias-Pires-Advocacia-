@@ -58,8 +58,7 @@ const Services = () => {
             Áreas de Atuação
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Oferecemos serviços jurídicos especializados com foco na excelência 
-            e na defesa integral dos interesses dos nossos clientes
+            Atuação nas seguintes áreas do direito
           </p>
         </div>
 
