@@ -2,6 +2,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
 import logoImage from "@/assets/logo-pires.png";
+
+// Unified contact phone constant
+const CONTACT_PHONE = "(43) 99627-3131";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navItems = [{
@@ -34,8 +38,9 @@ const Header = () => {
                 {item.name}
               </a>)}
             <Button size="lg" className="bg-gray-900 text-white hover:bg-gray-800" asChild>
-              <a href="https://wa.me/5543996273131" target="_blank" rel="noopener noreferrer">Consulta Rápida<MessageCircle className="w-4 h-4 mr-2" />
-                Consulta Gratuita
+              <a href={`https://wa.me/55${CONTACT_PHONE.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 mr-2" />
+                Agendar Consulta
               </a>
             </Button>
           </nav>
@@ -53,9 +58,9 @@ const Header = () => {
                   {item.name}
                 </a>)}
               <Button className="self-start mt-4 bg-gray-900 text-white hover:bg-gray-800" asChild>
-                <a href="https://wa.me/5543996273131" target="_blank" rel="noopener noreferrer">
+                <a href={`https://wa.me/55${CONTACT_PHONE.replace(/\D/g, '')}`} target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-4 h-4 mr-2" />
-                  Consulta Gratuita
+                  Agendar Consulta
                 </a>
               </Button>
             </div>
