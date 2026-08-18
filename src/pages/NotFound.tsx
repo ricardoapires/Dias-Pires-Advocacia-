@@ -45,8 +45,8 @@ const NotFound = () => {
 
         <div className="mt-8 p-4 bg-accent/5 rounded-lg border border-accent/20">
           <p className="text-sm text-muted-foreground">
-            Precisa de ajuda jurídica? Entre em contato conosco para uma 
-            <strong className="text-accent"> consulta gratuita</strong>.
+            Precisa de ajuda jurídica? Entre em contato conosco para uma
+            <strong className="text-accent"> consulta inicial</strong>.
           </p>
         </div>
       </div>
