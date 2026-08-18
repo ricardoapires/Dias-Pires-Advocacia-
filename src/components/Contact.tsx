@@ -97,8 +97,13 @@ const Contact = () => {
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-primary">Área de Interesse</label>
-                  <select className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground">
-                    <option>Selecione uma área</option>
+                  <select name="areaOfInterest" className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground">
+                    <option value="">Selecione uma área</option>
+                    <option>Planejamento Tributário</option>
+                    <option>Defesa em Autuação</option>
+                    <option>Regularização Fiscal / Parcelamento</option>
+                    <option>Tributação Rural / Agronegócio</option>
+                    <option>Consultoria Empresarial</option>
                     <option>Direito Tributário</option>
                     <option>Direito Empresarial</option>
                     <option>Direito de Família e Sucessões</option>
@@ -109,9 +114,38 @@ const Contact = () => {
                 </div>
               </div>
 
+              {/* New qualification fields */}
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-primary">Pessoa</label>
+                  <select name="personType" className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground">
+                    <option value="">Selecione</option>
+                    <option>Pessoa Física</option>
+                    <option>Pessoa Jurídica</option>
+                  </select>
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-primary">Já possui CNPJ ativo?</label>
+                  <select name="hasCNPJ" className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground">
+                    <option value="">Selecione</option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="space-y-2 md:mt-0">
+                <label className="text-sm font-medium text-primary">Atividade rural?</label>
+                <select name="isRural" className="w-full px-3 py-2 border border-input rounded-md bg-background text-foreground">
+                  <option value="">Selecione</option>
+                  <option>Sim</option>
+                  <option>Não</option>
+                </select>
+              </div>
+
               <div className="space-y-2">
                 <label className="text-sm font-medium text-primary">Mensagem</label>
-                <Textarea 
+                <Textarea name="message" 
                   placeholder="Descreva brevemente seu caso ou dúvida..." 
                   className="min-h-[120px]"
                 />
