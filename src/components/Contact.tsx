@@ -214,7 +214,7 @@ const Contact = () => {
                   />
                   <label htmlFor="privacy-consent" className="text-sm text-muted-foreground cursor-pointer">
                     Concordo com o tratamento dos meus dados conforme a{" "}
-                    <a href="#" className="text-accent hover:underline">
+                    <a href="/politica-de-privacidade" className="text-accent hover:underline">
                       Política de Privacidade
                     </a>
                   </label>
