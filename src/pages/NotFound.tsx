@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Scale, Home, ArrowLeft } from "lucide-react";
@@ -32,10 +32,10 @@ const NotFound = () => {
         
         <div className="space-y-4">
           <Button variant="hero" size="lg" asChild className="w-full">
-            <a href="/">
+            <Link to="/">
               <Home className="w-5 h-5 mr-2" />
               Voltar ao Início
-            </a>
+            </Link>
           </Button>
           <Button variant="outline" size="lg" onClick={() => window.history.back()} className="w-full">
             <ArrowLeft className="w-5 h-5 mr-2" />
