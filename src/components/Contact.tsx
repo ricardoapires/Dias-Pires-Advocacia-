@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { 
   MapPin, 
   Phone, 
@@ -214,9 +215,9 @@ const Contact = () => {
                   />
                   <label htmlFor="privacy-consent" className="text-sm text-muted-foreground cursor-pointer">
                     Concordo com o tratamento dos meus dados conforme a{" "}
-                    <a href="/politica-de-privacidade" className="text-accent hover:underline">
+                    <Link to="/politica-de-privacidade" className="text-accent hover:underline">
                       Política de Privacidade
-                    </a>
+                    </Link>
                   </label>
                 </div>
 

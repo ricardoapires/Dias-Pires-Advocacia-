@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { Link } from "react-router-dom";
 import logoLight from "@/assets/logo-light.png";
 
 // Unified contact phone constant
@@ -109,12 +110,12 @@ const Footer = () => {
               © 2024 Dias Pires Advocacia. Todos os direitos reservados.
             </div>
             <div className="flex items-center space-x-6 text-sm">
-              <a href="/politica-de-privacidade" className="text-primary-foreground/80 hover:text-accent transition-colors">
+              <Link to="/politica-de-privacidade" className="text-primary-foreground/80 hover:text-accent transition-colors">
                 Política de Privacidade
-              </a>
-              <a href="/termos-de-uso" className="text-primary-foreground/80 hover:text-accent transition-colors">
+              </Link>
+              <Link to="/termos-de-uso" className="text-primary-foreground/80 hover:text-accent transition-colors">
                 Termos de Uso
-              </a>
+              </Link>
             </div>
           </div>
         </div>

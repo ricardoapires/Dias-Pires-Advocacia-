@@ -20,6 +20,19 @@
   <meta name="twitter:title" content="Dias Pires Advocacia - Soluções Jurídicas Especializadas">
   <meta property="og:description" content="Dias Pires Advocacia oferece soluções jurídicas especializadas em Direito Tributário, Empresarial, Família, Civil, Trabalho e Previdenciário.">
   <meta name="twitter:description" content="Dias Pires Advocacia oferece soluções jurídicas especializadas em Direito Tributário, Empresarial, Família, Civil, Trabalho e Previdenciário.">
+  <script>
+    (function () {
+      try {
+        var saved = sessionStorage.getItem("spa:redirect");
+        if (saved) {
+          sessionStorage.removeItem("spa:redirect");
+          if (saved !== window.location.pathname + window.location.search + window.location.hash) {
+            window.history.replaceState(null, "", saved);
+          }
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 
   <body>
