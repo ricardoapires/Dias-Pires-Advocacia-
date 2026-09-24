@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import { 
   Briefcase, 
   Users, 
@@ -90,10 +91,19 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Button variant="ghost" className="w-full group/btn justify-between">
-                  Saiba mais
-                  <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </Button>
+                {service.title === "Direito Tributário" ? (
+                  <Button variant="ghost" className="w-full group/btn justify-between" asChild>
+                    <Link to="/direito-tributario">
+                      Saiba mais
+                      <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                ) : (
+                  <Button variant="ghost" className="w-full group/btn justify-between">
+                    Saiba mais
+                    <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Button>
+                )}
               </CardContent>
             </Card>
           ))}
