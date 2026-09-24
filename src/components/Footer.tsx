@@ -12,13 +12,13 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Description */}
           <div className="space-y-4">
-            <a href="#home">
+            <Link to="/#home">
               <img 
                 src={logoLight} 
                 alt="Dias Pires Advocacia" 
                 className="h-16 w-auto"
               />
-            </a>
+            </Link>
             <p className="text-primary-foreground/80 text-sm">
               Escritório de advocacia atuante em Direito Tributário, Empresarial, Família e Sucessões, Civil, Trabalho e Previdenciário.
             </p>
@@ -32,31 +32,11 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Navegação</h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#home" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Início
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Serviços
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Sobre
-                </a>
-              </li>
-              <li>
-                <a href="#team" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Equipe
-                </a>
-              </li>
-              <li>
-                <a href="#contact" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                  Contato
-                </a>
-              </li>
+              <li><Link to="/#home" className="text-primary-foreground/80 hover:text-accent transition-colors">Início</Link></li>
+              <li><Link to="/#services" className="text-primary-foreground/80 hover:text-accent transition-colors">Serviços</Link></li>
+              <li><Link to="/#about" className="text-primary-foreground/80 hover:text-accent transition-colors">Sobre</Link></li>
+              <li><Link to="/#team" className="text-primary-foreground/80 hover:text-accent transition-colors">Equipe</Link></li>
+              <li><Link to="/#contact" className="text-primary-foreground/80 hover:text-accent transition-colors">Contato</Link></li>
             </ul>
           </div>
 
@@ -77,28 +57,10 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold">Contato</h3>
             <div className="space-y-3 text-sm">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 mt-1 text-accent flex-shrink-0" />
-                <div className="text-primary-foreground/80">
-                  <div>Avenida Independência, n.º 1.315 - Centro</div>
-                  <div>Bela Vista do Paraíso - PR</div>
-                </div>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-accent" />
-                <span className="text-primary-foreground/80">{CONTACT_PHONE}</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-accent" />
-                <span className="text-primary-foreground/80">juridico@diaspiresadvocacia.com.br</span>
-              </div>
-              <div className="flex items-start space-x-3">
-                <Clock className="w-4 h-4 mt-1 text-accent" />
-                <div className="text-primary-foreground/80">
-                  <div>Seg - Sex: 8h às 18h</div>
-                  <div>Emergências: 24h</div>
-                </div>
-              </div>
+              <div className="flex items-start space-x-3"><MapPin className="w-4 h-4 mt-1 text-accent flex-shrink-0" /><div className="text-primary-foreground/80"><div>Avenida Independência, n.º 1.315 - Centro</div><div>Bela Vista do Paraíso - PR</div></div></div>
+              <div className="flex items-center space-x-3"><Phone className="w-4 h-4 text-accent" /><span className="text-primary-foreground/80">{CONTACT_PHONE}</span></div>
+              <div className="flex items-center space-x-3"><Mail className="w-4 h-4 text-accent" /><span className="text-primary-foreground/80">juridico@diaspiresadvocacia.com.br</span></div>
+              <div className="flex items-start space-x-3"><Clock className="w-4 h-4 mt-1 text-accent" /><div className="text-primary-foreground/80"><div>Seg - Sex: 8h às 18h</div><div>Emergências: 24h</div></div></div>
             </div>
           </div>
         </div>
@@ -106,16 +68,10 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-primary-foreground/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-primary-foreground/80">
-              © 2024 Dias Pires Advocacia. Todos os direitos reservados.
-            </div>
+            <div className="text-sm text-primary-foreground/80">© 2024 Dias Pires Advocacia. Todos os direitos reservados.</div>
             <div className="flex items-center space-x-6 text-sm">
-              <Link to="/politica-de-privacidade" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                Política de Privacidade
-              </Link>
-              <Link to="/termos-de-uso" className="text-primary-foreground/80 hover:text-accent transition-colors">
-                Termos de Uso
-              </Link>
+              <Link to="/politica-de-privacidade" className="text-primary-foreground/80 hover:text-accent transition-colors">Política de Privacidade</Link>
+              <Link to="/termos-de-uso" className="text-primary-foreground/80 hover:text-accent transition-colors">Termos de Uso</Link>
             </div>
           </div>
         </div>
